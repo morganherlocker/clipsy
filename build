@@ -1,0 +1,3 @@
+echo uglifying..
+uglifyjs index.js -o clipsy.min.js
+echo ..complete
