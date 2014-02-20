@@ -1,3 +1,5 @@
+echo browserifying..
+./node_modules/.bin/browserify index.js > clipsy.js -s clipsy
 echo uglifying..
 uglifyjs index.js -o clipsy.min.js
 echo ..complete
