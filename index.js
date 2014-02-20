@@ -4946,4 +4946,4 @@ ClipperLib.Lighten = function (polygon, tolerance)
   return results;
 }
 
-module.exports = ClipperLib.clipper();
+module.exports = ClipperLib;
