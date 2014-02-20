@@ -9,3 +9,4 @@ Clipsy is a node.js compatible fork of jsclipper [JS]... which is a port of clip
 ```bash
 npm install clipsy
 ```
+
