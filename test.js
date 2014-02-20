@@ -6,18 +6,18 @@ describe('clipsy', function(){
     if(!clipsy) throw new Error('clipsy require failed')
   })
   it('should take a set of polygons and return a unioned polygon', function(){
-    clipsy = new clipsy.Clipper()
-    console.log(clipsy)
-    var paths = [[{X:30,Y:30},{X:130,Y:30},{X:130,Y:130},{X:30,Y:130}],
-                 [{X:60,Y:60},{X:60,Y:100},{X:100,Y:100},{X:100,Y:60}]];
+    clipper = new clipsy.Clipper()
 
-    var delta = 30
-    var scale = 2
+    var paths = [[{X:-85.53508758544922,Y:33.28777693677941},{X:-85.53508758544922,Y:33.32751625923708},{X:-85.43895721435547,Y:33.32751625923708},{X:-85.43895721435547,Y:33.28777693677941}]];
 
-    var param_delta = 0
-    var param_miterLimit = 5
-    offsetResult = clipsy.OffsetPolygons(paths, param_delta, 0, param_miterLimit, true);
+    var delta = 5
+    var scale = 100000000000000
+    var miterLimit = 5
+    var joinType = 1
 
-    console.log(offsetResult)
+    offsetResult = clipper.OffsetPolygons(paths, delta * scale, joinType, miterLimit, true);
+
+    if(!offsetResult) throw new Error('no offset result')
+    //console.log(offsetResult)
   })
 })

@@ -1,10 +1,10 @@
 {
   "name": "clipsy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a node.js port of jsclipper [JS]... which is a port of clipper [C++, C#, Delphi] ",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js"
+    "test": "mocha test.js -R spec"
   },
   "repository": {
     "type": "git",
