@@ -1,6 +1,6 @@
 {
   "name": "clipsy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a node.js port of jsclipper [JS]... which is a port of clipper [C++, C#, Delphi] ",
   "main": "index.js",
   "scripts": {
