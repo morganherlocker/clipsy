@@ -11,3 +11,18 @@ Clipsy is a node.js compatible fork of jsclipper [JS]... which is a port of clip
 npm install clipsy
 ```
 
+###Usage
+
+####Buffering Polygons
+```js
+var clipsy = require('./index')
+clipper = new clipsy.Clipper()
+
+var paths = [[{X:-85.53508758544922,Y:33.28777693677941},{X:-85.53508758544922,Y:33.32751625923708},{X:-85.43895721435547,Y:33.32751625923708},{X:-85.43895721435547,Y:33.28777693677941}]];
+
+var delta = 5
+var miterLimit = 5
+var joinType = 1
+
+offsetResult = clipper.OffsetPolygons(paths, delta, joinType, miterLimit, true);
+```
