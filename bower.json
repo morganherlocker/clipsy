@@ -1,0 +1,28 @@
+{
+  "name": "clipsy",
+  "main": "clipsy.min.js",
+  "version": "0.0.2",
+  "homepage": "https://github.com/morganherlocker/clipsy",
+  "authors": [
+    "morganherlocker"
+  ],
+  "description": "a node.js compatable fork of jsClipper",
+  "keywords": [
+    "geo",
+    "geometry",
+    "jsclipper",
+    "topology",
+    "buffer",
+    "intersect",
+    "intersection",
+    "offset"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
