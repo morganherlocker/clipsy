@@ -27,5 +27,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/morganherlocker/clipsy/issues"
-  }
+  },
+  "devDependencies": [
+    "mocha",
+    "should"
+  ]
 }
